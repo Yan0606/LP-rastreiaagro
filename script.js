@@ -129,17 +129,17 @@ function changeSlide(direction) {
     }
 }
 
-function currentSlide(index) {
-    if (isAnimating) return;
+// function currentSlide(index) {
+//     if (isAnimating) return;
     
-    showSlide(index - 1);
+//     showSlide(index - 1);
     
-    // Reset auto-play
-    if (CONFIG.carousel.autoPlay) {
-        stopCarouselAutoPlay();
-        startCarouselAutoPlay();
-    }
-}
+//     // Reset auto-play
+//     if (CONFIG.carousel.autoPlay) {
+//         stopCarouselAutoPlay();
+//         startCarouselAutoPlay();
+//     }
+// }
 
 function startCarouselAutoPlay() {
     if (carouselInterval) return;
